@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Loopstudios landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -31,12 +31,12 @@
         <img src="images/logo.svg" alt="logo" />
       </div>
       <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
+        <ul class="nav-links">
+          <li><a class="nav-items" href="#">About</a></li>
+          <li><a class="nav-items" href="#">Careers</a></li>
+          <li><a class="nav-items" href="#">Events</a></li>
+          <li><a class="nav-items" href="#">Products</a></li>
+          <li><a class="nav-items" href="#">Support</a></li>
         </ul>
       </nav>
     </header>
@@ -48,33 +48,40 @@
         </div>
       </section>
       <section class="interactive">
-        <img
-          src="images/desktop/image-interactive.jpg"
-          alt="interactive-image"
-        />
-        <div class="interactive-text">
-          <h2>The leader in interactive VR</h2>
-          <p>
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.
-          </p>
+        <div class="inter-wrap">
+          <div class="cover">
+            <img
+              src="images/desktop/image-interactive.jpg"
+              alt="interactive-image"
+            />
+          </div>
+          <div class="interactive-text">
+            <h2>The leader in interactive VR</h2>
+            <p>
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
         </div>
       </section>
       <section class="creative">
-        <div class="title">
+        <div class="creative-title">
           <h2>Our creations</h2>
           <button>See all</button>
         </div>
         <div class="creative-cards">
           <!-- CARD -->
+          <!-- <div class="card-container"> -->
           <div class="card">
             <img
               src="images/desktop/image-deep-earth.jpg"
               alt="image-deep-earth"
             />
-            <span> Deep earth </span>
+
+            <span> Deep <br />earth </span>
+            <!-- </div> -->
           </div>
           <!-- CARD -->
           <div class="card">
@@ -82,7 +89,7 @@
               src="images/desktop/image-night-arcade.jpg"
               alt="image-night-arcade"
             />
-            <span> Night arcade </span>
+            <span> Night <br />arcade </span>
           </div>
           <!-- CARD -->
           <div class="card">
@@ -90,12 +97,15 @@
               src="images/desktop/image-soccer-team.jpg"
               alt="image-soccer-team"
             />
-            <span> Soccer team VR </span>
+            <span> Soccer <br />team VR </span>
           </div>
           <!-- CARD -->
           <div class="card">
             <img src="images/desktop/image-grid.jpg" alt="image-grid" />
-            <span> The grid </span>
+            <span>
+              The<br />
+              grid
+            </span>
           </div>
           <!-- CARD -->
           <div class="card">
@@ -103,7 +113,7 @@
               src="images/desktop/image-from-above.jpg"
               alt="image-from-above"
             />
-            <span> From up above VR </span>
+            <span> From up <br />above VR </span>
           </div>
           <!-- CARD -->
           <div class="card">
@@ -111,66 +121,71 @@
               src="images/desktop/image-pocket-borealis.jpg"
               alt="image-pocket-borealis"
             />
-            <span> Pocket borealis </span>
+            <span> Pocket <br />borealis </span>
           </div>
           <!-- CARD -->
           <div class="card">
             <img src="images/desktop/image-curiosity.jpg" alt=image-curiosity">
-            <span> The curiosity </span>
+            <span> The <br />curiosity </span>
           </div>
           <!-- CARD -->
           <div class="card">
             <img src="images/desktop/image-fisheye.jpg" alt="image-fisheye" />
-            <span> Make it fisheye </span>
+            <span> Make it <br />fisheye </span>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div>
-        <img src="images/logo.svg" alt="logo" />
-        <div class="social-links">
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="images/icon-facebook.svg" alt="icon-facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="images/icon-twitter.svg" alt="icon-twitter"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="images/icon-pinterest.svg" alt="icon-pinterest"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="images/icon-instagram.svg" alt="icon-instagram"
-              /></a>
-            </li>
-          </ul>
+      <div class="foot-container">
+        <div class="logo-container">
+          <img src="images/logo.svg" alt="logo" />
         </div>
-      </div>
-      <div>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Support</a></li>
+
+        <ul class="social-links">
+          <li>
+            <a class="social-item" href="#"
+              ><img src="images/icon-facebook.svg" alt="icon-facebook"
+            /></a>
+          </li>
+          <li>
+            <a class="social-item" href="#"
+              ><img src="images/icon-twitter.svg" alt="icon-twitter"
+            /></a>
+          </li>
+          <li>
+            <a class="social-item" href="#"
+              ><img src="images/icon-pinterest.svg" alt="icon-pinterest"
+            /></a>
+          </li>
+          <li>
+            <a class="social-item" href="#"
+              ><img src="images/icon-instagram.svg" alt="icon-instagram"
+            /></a>
+          </li>
         </ul>
       </div>
-      <span> © 2021 Loopstudios. All rights reserved. </span>
+      <div class="foot-wrapper">
+        <div class="footer-nav">
+          <ul class="footer-links">
+            <li><a class="nav-items" href="#">About</a></li>
+            <li><a class="nav-items" href="#">Careers</a></li>
+            <li><a class="nav-items" href="#">Events</a></li>
+            <li><a class="nav-items" href="#">Products</a></li>
+            <li><a class="nav-items" href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="copyright-text">
+          <span> © 2021 Loopstudios. All rights reserved. </span>
+        </div>
+      </div>
     </footer>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>
