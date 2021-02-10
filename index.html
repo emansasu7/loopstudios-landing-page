@@ -32,13 +32,21 @@
       </div>
       <nav>
         <ul class="nav-links">
-          <li><a class="nav-items" href="#">About</a></li>
+          <li>
+            <a class="nav-items" href="#">About</a>
+            <!-- <div class="underline"></div> -->
+          </li>
           <li><a class="nav-items" href="#">Careers</a></li>
           <li><a class="nav-items" href="#">Events</a></li>
           <li><a class="nav-items" href="#">Products</a></li>
           <li><a class="nav-items" href="#">Support</a></li>
         </ul>
       </nav>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </header>
 
     <main>
@@ -76,17 +84,27 @@
           <!-- <div class="card-container"> -->
           <div class="card">
             <img
+              class="desktop-image"
               src="images/desktop/image-deep-earth.jpg"
               alt="image-deep-earth"
             />
-
+            <img
+              class="mobile-image"
+              src="images/mobile/image-deep-earth.jpg"
+              alt="image-deep-earth"
+            />
             <span> Deep <br />earth </span>
-            <!-- </div> -->
           </div>
           <!-- CARD -->
           <div class="card">
             <img
+              class="desktop-image"
               src="images/desktop/image-night-arcade.jpg"
+              alt="image-night-arcade"
+            />
+            <img
+              class="mobile-image"
+              src="images/mobile/image-night-arcade.jpg"
               alt="image-night-arcade"
             />
             <span> Night <br />arcade </span>
@@ -94,14 +112,29 @@
           <!-- CARD -->
           <div class="card">
             <img
+              class="desktop-image"
               src="images/desktop/image-soccer-team.jpg"
+              alt="image-soccer-team"
+            />
+            <img
+              class="mobile-image"
+              src="images/mobile/image-soccer-team.jpg"
               alt="image-soccer-team"
             />
             <span> Soccer <br />team VR </span>
           </div>
           <!-- CARD -->
-          <div class="card">
-            <img src="images/desktop/image-grid.jpg" alt="image-grid" />
+          <div class="card end-card">
+            <img
+              class="desktop-image"
+              src="images/desktop/image-grid.jpg"
+              alt="image-grid"
+            />
+            <img
+              class="mobile-image"
+              src="images/mobile/image-grid.jpg"
+              alt="image-grid"
+            />
             <span>
               The<br />
               grid
@@ -110,7 +143,13 @@
           <!-- CARD -->
           <div class="card">
             <img
+              class="desktop-image"
               src="images/desktop/image-from-above.jpg"
+              alt="image-from-above"
+            />
+            <img
+              class="mobile-image"
+              src="images/mobile/image-from-above.jpg"
               alt="image-from-above"
             />
             <span> From up <br />above VR </span>
@@ -118,19 +157,36 @@
           <!-- CARD -->
           <div class="card">
             <img
+              class="desktop-image"
               src="images/desktop/image-pocket-borealis.jpg"
+              alt="image-pocket-borealis"
+            />
+            <img
+              class="mobile-image"
+              src="images/mobile/image-pocket-borealis.jpg"
               alt="image-pocket-borealis"
             />
             <span> Pocket <br />borealis </span>
           </div>
           <!-- CARD -->
           <div class="card">
-            <img src="images/desktop/image-curiosity.jpg" alt=image-curiosity">
+            <img class="desktop-image" src="images/desktop/image-curiosity.jpg"
+            alt=image-curiosity"/> <img class="mobile-image"
+            src="images/mobile/image-curiosity.jpg" alt=image-curiosity"/>
             <span> The <br />curiosity </span>
           </div>
           <!-- CARD -->
           <div class="card">
-            <img src="images/desktop/image-fisheye.jpg" alt="image-fisheye" />
+            <img
+              class="desktop-image"
+              src="images/desktop/image-fisheye.jpg"
+              alt="image-fisheye"
+            />
+            <img
+              class="mobile-image"
+              src="images/mobile/image-fisheye.jpg"
+              alt="image-fisheye"
+            />
             <span> Make it <br />fisheye </span>
           </div>
         </div>
@@ -157,6 +213,7 @@
             <a class="social-item" href="#"
               ><img src="images/icon-pinterest.svg" alt="icon-pinterest"
             /></a>
+            <div class="underline"></div>
           </li>
           <li>
             <a class="social-item" href="#"
@@ -187,5 +244,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="app.js"></script>
   </body>
 </html>
